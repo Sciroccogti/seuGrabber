@@ -6,6 +6,8 @@
 2. 打开config.php， 根据php内说明在Chrome的F12中获取相应信息；
 3. 输入127.0.0.1（也许你设置的是其他网址），即可抢课（
 
+> 提示：`batchCode` 获取方式为 控制台输入：`JSON.parse(sessionStorage.getItem('currentBatch')).code`, `cookies` 获取方式为 控制台输入：`document.cookie`
+
 ### *说明*
 因为我是拿`php`写的，php对并发资瓷不太好，所以这个后端还是`单线程`，但是我在js里设置了setInterval，亲测抢课效率为`3节/s`，在选课临开始前几秒挂上就行了。
 
